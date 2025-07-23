@@ -50,7 +50,7 @@ body, html {
     letter-spacing: 0.05em;
     color: #fff;
     background: linear-gradient(to right, #ddd, #fff);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     text-shadow: 4px 4px 10px rgba (0, 0, 0, 0.25);
 }
@@ -65,3 +65,22 @@ body, html {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+/*Scroll Prompt*/
+.scroll-down { 
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    animation: bounce 2s infinite;
+    color: #333;
+}
+
+.scroll-down span { 
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+@keyframes bounce { 
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(10px); }
+}
