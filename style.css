@@ -1,2 +1,67 @@
-width: 1440px;
-height: 1024px;
+/* Reset & Base */
+* { 
+    margin: 0; 
+    padding: 0;
+    box-sizing: 0;
+}
+
+body, html { 
+    height:100%;
+    font-family: 'Courier New', monospace;
+    background-color: #fceeee;
+    overflow-x: hidden;
+
+}
+
+/* Animated Blobs */
+.background-blobs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at 30% 30%, #f29c9c40, transparent 50%),
+                radial-gradient(circle at 30% 30%, #f29c9c40, transparent 50%),
+                radial-gradient(circle at 30% 30%, #f29c9c40, transparent 50%);
+    animation: pulse 6s infinite alternate ease-in-out;
+}
+
+@keyframes pulse { 
+    0% {background-size: 100% 100%;}
+    100% {background-size: 105% 105%;}
+}
+
+/* Hero Section */
+.hero { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Logo */
+.logo { 
+    font-size: 10rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: #fff;
+    background: linear-gradient(to right, #ddd, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 10px rgba (0, 0, 0, 0.25);
+}
+
+/* Tagline */
+.tagline { 
+    margin-top: 1rem;
+    font-size: 1rem;
+    background: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
